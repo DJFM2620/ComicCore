@@ -1,0 +1,22 @@
+<div class="container-md d-flex justify-content-center">
+    <form (submit)="onSubmit()" #formLogIn="ngForm">
+        <div>
+            <label for="input-Log-Email-User" class="form-label">Correo electrónico / Usuario</label>
+            <input type="email" class="form-control" id="input-Log-Email-User" name="email" placeholder="Ingresa tu Email o Usuario" #email="ngModel" [(ngModel)]="logIn.email" required>
+            <div class="alert alert-danger mt-2" [hidden]="email.valid || email.pristine">
+                <span>Este campo es obligatorio</span>
+            </div>
+        </div>
+
+        <div class="mb-4 mt-3">
+            <label for="input-Log-assword" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="input-Log-Password" name="password" placeholder="Ingresa tu contraseña" #password="ngModel" [(ngModel)]="logIn.password" required [minlength]="7">
+            <div class="alert alert-danger mt-2" [hidden]="password.valid || password.pristine">
+                <span *ngIf="password.errors?.['required']">Este campo es obligatorio</span>
+                <span *ngIf="password.errors?.['minlength']">La contraseña debe tener como minimo 7 caracteres</span>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary" [disabled]="formLogIn.invalid">Iniciar Sesion</button>
+    </form>
+</div>

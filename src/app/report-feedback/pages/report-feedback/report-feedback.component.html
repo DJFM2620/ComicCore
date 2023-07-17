@@ -1,0 +1,50 @@
+<section>
+    <app-section-title title="Reportes y Sugerencias"></app-section-title>
+
+    <div class="container-md">
+        <form class="row g-3" (submit)="onSubmit()" #formReport="ngForm">
+
+            <div class="col-md-6">
+                <label for="inputEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail" name="email" [(ngModel)]="report.email" placeholder="Ingresa tu Email" #email="ngModel" required [email]="true">
+                
+                <div class="alert alert-danger mt-2 mt-2" role="alert" [hidden]="email.valid || email.pristine">
+                    
+                    <span *ngIf="email.errors?.['required']">El email es obligatorio</span>
+                    <span *ngIf="email.errors?.['email']">El email debe tener un formato valido</span>
+                </div>
+            </div>
+    
+            <div class="col-md-6">
+                <label for="inputUser" class="form-label">Usuario</label>
+                <input type="text" class="form-control" id="inputUser" name="user" [(ngModel)]="report.user" placeholder="Ingresa tu Usuario" #user="ngModel" required>
+                
+                <div class="alert alert-danger mt-2" role="alert" [hidden]="user.valid || user.pristine">
+                    <span>El usuario es obligatorio</span>
+                </div>
+            </div>
+    
+            <div class="col-md-4">
+                <label for="inputType" class="form-label">Tipo de mensaje</label>
+                <select id="inputType" class="form-select" name="option" [(ngModel)]="report.option">
+                    <option>Sugerencia</option>
+                    <option>Reporte</option>
+                </select>
+            </div>
+    
+            <div class="col-md-8">
+                <label for="txtAreaDescription" class="form-label">Descripcion</label>
+                <textarea class="form-control" id="txtAreaDescription" name="description" [(ngModel)]="report.description" rows="3" #description="ngModel" required></textarea>
+
+                <div class="alert alert-danger mt-2" role="alert" [hidden]="description.valid || description.pristine">
+                    <span>La descripcion es obligatoria</span>
+                </div>
+            </div>
+    
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary" [disabled]="formReport.invalid">Enviar</button>
+            </div>
+    
+        </form>
+    </div>
+</section>

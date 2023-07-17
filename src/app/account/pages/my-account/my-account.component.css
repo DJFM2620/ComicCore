@@ -1,0 +1,23 @@
+label {
+
+    color: #FFFFFF;
+}
+
+.nav {
+
+    border-right: 1px solid #646464;
+    padding-right: 10px;
+}
+
+.nav-link {
+
+    color: #FFFFFF;
+    border-bottom: 1px solid #646464;
+    margin-bottom: 10px;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show >.nav-link {
+
+    background-color: #2C2C2C;
+    border-bottom: 0;
+}

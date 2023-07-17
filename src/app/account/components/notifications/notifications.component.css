@@ -1,0 +1,12 @@
+li {
+
+    background-color: #1A1A1A;
+    color: #cbcbcb;
+    border-bottom: 1px solid #646464;
+    margin: 10px;
+}
+
+.badge {
+
+    font-size: 1rem;
+}

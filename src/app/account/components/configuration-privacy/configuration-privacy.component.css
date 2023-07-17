@@ -1,0 +1,12 @@
+.list-group-item {
+
+    background-color: #3c3c3c;
+    color: #cbcbcb;
+    border: 0 !important;
+    margin: 10px;
+}
+
+.form-check-input, label {
+
+    margin-bottom: 20px;
+}

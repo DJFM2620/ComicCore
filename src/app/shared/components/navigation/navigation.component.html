@@ -1,0 +1,46 @@
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container-fluid">
+
+    <a class="navbar-brand" routerLink="/">ComicCore</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 container-fluid justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/">INICIO</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/Featured">DESTACADOS</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/Updates">RECIENTES</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/Tags">CATEGORIAS</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/Artists">ARTISTAS</a>
+        </li>
+      </ul>
+
+      <form class="d-flex me-5" role="search">
+        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+    </div>
+
+    <div class="pe-5 d-flex align-items-center">
+      <i class="las la-user-circle fw-normal"></i>
+      <span class="account border border-1 border-dark fw-normal" routerLink="/Account/LogIn">MI CUENTA</span>
+    </div>
+  </div>  
+</nav>

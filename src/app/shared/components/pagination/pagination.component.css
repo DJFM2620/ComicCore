@@ -1,0 +1,19 @@
+.page-link {
+
+    border: 0;
+    background-color: #262626;
+    color: #FFFFFF;
+    border: 1px solid #646464;
+}
+
+.page-link:hover {
+
+    background-color: #333333;
+}
+
+.pagination {
+
+    border: 1px solid #646464;
+    border-radius: 10px;
+    padding: 10px;
+}

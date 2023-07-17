@@ -1,0 +1,49 @@
+Usuario:
+
+    Nombre de usuario:
+
+    Correo electrónico:
+
+    Contraseña:
+
+    Nombre y apellidos: 
+
+    Avatar o imagen de perfil:
+
+    Biografía o descripción:
+
+    Preferencias de notificación: 
+
+    Historial de lectura: 
+
+    Lista de favoritos:
+
+    Redes Sociales:
+
+    Actividad:
+
+Comic: 
+
+    Nombre:
+    
+    Artista:
+
+    Capitulo:
+
+    Descripcion:
+
+    Numero Paginas:
+
+    Idioma:
+
+    Contenido o Paginas:
+
+    Fecha de Lanzamiento:
+
+    Imagen:
+
+    Genero o Etiquetas:
+
+    Calificacion:
+
+    Comentarios de Usuarios:

@@ -1,0 +1,59 @@
+<div class="container-md d-flex justify-content-center">
+
+    <form class="row g-3" (ngSubmit)="onSubmit()" [formGroup]="registerForm">
+
+        <div class="mb-3 col-6">
+            <label class="" for="input-Reg-User">Usuario</label>
+            <input class="form-control" type="text" id="input-Reg-User" formControlName="user" placeholder="Ingresa tu nombre de usuario">
+
+            <div class="alert alert-danger mt-2" *ngIf="registerForm.get('user')?.touched && registerForm.get('user')?.errors?.['required']" role="alert">
+                <span>- El nombre de usuario es requerido</span>
+            </div>
+        </div>
+        <div class="mb-3 col-6">
+            <label for="input-Reg-Email">Email</label>
+            <input class="form-control" type="text" id="input-Reg-Email" formControlName="email" placeholder="Ingresa tu email">
+
+            <div class="alert alert-danger mt-2" *ngIf="registerForm.get('email')?.touched && registerForm.get('email')?.errors?.['required']" role="alert">
+                <span>- El email es requerido</span>
+            </div>
+            <div class="alert alert-danger mt-2" *ngIf="registerForm.get('email')?.errors?.['email']">
+                <span>- El email debe ser valido</span>
+            </div>
+        </div>
+        <div class="mb-3 col-6">
+            <label for="input-Reg-Password">Contraseña</label>
+            <input class="form-control" type="text" id="input-Reg-Password" formControlName="password" placeholder="Ingresa tu contraseña">
+
+            <div class="alert alert-danger mt-2" *ngIf="registerForm.get('password')?.touched && registerForm.get('password')?.errors?.['required']" role="alert">
+                <span>- La contraseña es requerida</span>
+            </div>
+            <div class="alert alert-danger mt-2" *ngIf="registerForm.get('password')?.errors?.['minlength']">
+                <span>- La contraseña debe tener como minimo {{registerForm.get('password')?.errors?.['minlength'].requiredLength}} 7 caracteres</span>
+            </div>
+        </div>
+        <div class="mb-3 col-6">
+            <label for="input-Reg-Confirm_Password">Confirmar Contraseña</label>
+            <input class="form-control" type="text" id="input-Reg-Confirm_Password" formControlName="confirm_password" placeholder="Confirma tu contraseña">
+
+            <div class="alert alert-danger mt-2" *ngIf="registerForm.get('confirm_password')?.touched && registerForm.get('confirm_password')?.errors?.['required']" role="alert">
+                <span>- La confirmacion de la contraseña es requerida</span>
+            </div>
+
+            <div class="alert alert-danger mt-2" *ngIf="registerForm.get('confirm_password')?.errors?.['minlength']">
+                <span>- La contraseña debe tener como minimo {{registerForm.get('confirm_password')?.errors?.['minlength'].requiredLength}} caracteres</span>
+            </div>
+        </div>
+        <div class="form-check col-6">
+            <input class="form-check-input" type="checkbox" id="check-Reg-Terms" formControlName="terms">
+            <label class="form-check-label" for="check-Reg-Terms">Terminos y Condiciones</label>
+
+            <div class="alert alert-danger mt-2" *ngIf="!registerForm.get('terms')?.value && registerForm.get('terms')?.dirty"role="alert">
+                <span>- Debe aceptar los terminos y condiciones</span>
+            </div>
+        </div>
+        <div class="col-6">
+            <button class="btn btn-primary" type="submit" [disabled]="registerForm.invalid">Registrarse</button>
+        </div>
+    </form>
+</div>

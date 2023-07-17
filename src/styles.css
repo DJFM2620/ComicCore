@@ -1,1 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap');
+
+* {
+
+    font-family: 'Comic Neue', cursive;
+}
+
+body {
+
+    background-color: #1A1A1A;
+}
+
+/*
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400&family=Josefin+Sans&display=swap');
+
+* {
+
+    font-family: 'Josefin Sans', sans-serif;
+}
+*/

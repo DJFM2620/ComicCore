@@ -1,0 +1,20 @@
+label {
+
+    color: #FFFFFF;
+}
+
+form {
+
+    width: 600px;
+}
+
+form > div {
+
+    padding-left: 0;
+}
+
+.form-check-input {
+
+    margin-left: 0;
+    margin-right: 1.0em;
+}

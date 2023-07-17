@@ -1,0 +1,65 @@
+[
+    {
+        "id_comic": 1,
+        "name_comic": "The Amazing Spider-Man",
+        "artist": "Unkown",
+        "last_cap": "#002",
+        "img": "assets/images/Comic_Prueba.jpg"
+    },
+    {
+        "id_comic": 2,
+        "name_comic": "The Amazing Spider-Man",
+        "artist": "Unkown",
+        "last_cap": "#002",
+        "img": "assets/images/Comic_Prueba.jpg"
+    },
+    {
+        "id_comic": 3,
+        "name_comic": "The Amazing Spider-Man",
+        "artist": "Unkown",
+        "last_cap": "#002",
+        "img": "assets/images/Comic_Prueba.jpg"
+    },
+    {
+        "id_comic": 4,
+        "name_comic": "The Amazing Spider-Man",
+        "artist": "Unkown",
+        "last_cap": "#002",
+        "img": "assets/images/Comic_Prueba.jpg"
+    },
+    {
+        "id_comic": 5,
+        "name_comic": "The Amazing Spider-Man",
+        "artist": "Unkown",
+        "last_cap": "#002",
+        "img": "assets/images/Comic_Prueba.jpg"
+    },
+    {
+        "id_comic": 6,
+        "name_comic": "The Amazing Spider-Man",
+        "artist": "Unkown",
+        "last_cap": "#002",
+        "img": "assets/images/Comic_Prueba.jpg"
+    },
+    {
+        "id_comic": 7,
+        "name_comic": "The Amazing Spider-Man",
+        "artist": "Unkown",
+        "last_cap": "#002",
+        "img": "assets/images/Comic_Prueba.jpg"
+    },
+    {
+        "id_comic": 8,
+        "name_comic": "The Amazing Spider-Man",
+        "artist": "Unkown",
+        "last_cap": "#002",
+        "img": "assets/images/Comic_Prueba.jpg"
+    },
+    {
+        "id_comic": 9,
+        "name_comic": "The Amazing Spider-Man",
+        "artist": "Unkown",
+        "last_cap": "#002",
+        "img": "assets/images/Comic_Prueba.jpg"
+    }
+]

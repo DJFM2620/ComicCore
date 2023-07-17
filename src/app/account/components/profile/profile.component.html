@@ -1,0 +1,96 @@
+<form>
+    <div class="row">
+        <div class="col-5 mb-3">
+            <label class="form-label" for="input-avatar">Avatar</label>
+            <input type="file" id="input-avatar" class="form-control text-dark bg-white" data-bs-theme=dark>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-4 mb-3">
+            <label class="form-label" for="input-Upd-User">Usuario</label>
+            <input type="text" id="input-Upd-User" class="form-control"
+                placeholder="Ingresa el nuevo nombre de usuario">
+        </div>
+        <div class="col-4 mb-3">
+            <label class="form-label" for="input-Upd-Email">Email</label>
+            <input type="text" id="input-Upd-Email" class="form-control" placeholder="Ingresa el nuevo email">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-4 mb-3">
+            <label class="form-label" for="input-Upd-Password">Contraseña Nueva</label>
+            <input type="password" id="input-Upd-Password" class="form-control"
+                placeholder="Ingresa la contraseña nueva">
+        </div>
+        <div class="col-4 mb-3">
+            <label class="form-label" for="input-Upd-Conf-Password">Confirmar Contraseña Nueva</label>
+            <input type="password" id="input-Upd-Conf-Password" class="form-control"
+                placeholder="Confirma la contraseña nueva">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-4 mb-3">
+            <label class="form-label" for="input-Upd-Conf-Password">Descripcion</label>
+            <textarea id="input-Upd-Conf-Password" class="form-control"
+                placeholder="Confirma la contraseña nueva"></textarea>
+        </div>
+        <div class="col-4 mb-3">
+            <label class="form-label" for="input-social-networks">Redes Sociales</label>
+
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action">Linkedin Link</a>
+                <a href="#" class="list-group-item list-group-item-action">Twitter Link</a>
+                <a href="#" class="list-group-item list-group-item-action">Instagram Link</a>
+                <a href="#" class="list-group-item list-group-item-action">Youtube Link</a>
+                <a href="#" class="list-group-item list-group-item-action">Facebook Link</a>
+            </div>
+
+            <input type="button" class="btn btn-primary form-control mt-3" id="input-social-networks" value="Agregar">
+            <!-- 
+                Al hacer clic en el boton se debera agregar un input mas para poder ingresar la red social por JS
+                Puede ser un dropdown o una lista e.e
+            -->
+        </div>
+    </div>
+
+    <div>
+        <button class="btn btn-primary">Confirmar Cambios</button>
+    </div>
+</form>
+
+<form>
+    <div class="row">
+        <div class="col-5 mb-3">
+            <label for="input-comic-name">Nombre del Comic</label>
+            <input type="text" class="form-control" id="input-comic-name" name="name" placeholder="Ingresa el nombre del comic" [(ngModel)]="newComic.name">
+        </div>
+
+        <div class="col-5 mb-3">
+            <label for="input-artist-name">Artista</label>
+            <input type="text" class="form-control" id="input-artist-name" name="artist" placeholder="Ingresa el nombre del Artista" [(ngModel)]="newComic.artist">
+        </div>
+
+        <div class="col-5 mb-3">
+            <label for="input-last-chapter">Capitulo</label>
+            <input type="text" class="form-control" id="input-last-chapter" name="last_chatper" placeholder="Ingresa el Ultimo Capitulo" [(ngModel)]="newComic.last_cap">
+        </div>
+
+        <div class="col-5 mb-3">
+            <label for="input-image">Imagen</label>
+            <input type="text" class="form-control" id="input-image" name="image" placeholder="Ingresa la Imagen del comic" [(ngModel)]="newComic.image">
+        </div>
+    </div>
+    <button type="button" class="btn btn-primary" (click)="addComic()">Registrar</button>
+</form>
+
+<!--
+
+    Nombre y apellidos: 
+
+    Preferencias de notificación: 
+
+    Actividad:
+-->

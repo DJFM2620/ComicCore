@@ -1,0 +1,14 @@
+label {
+  color: #ffffff;
+}
+
+.radio-button {
+
+  width: 250px;
+}
+
+.btn-check.active + .btn-outline-primary {
+
+  background-color: #007bff;
+  color: #fff;
+}

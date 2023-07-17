@@ -1,0 +1,34 @@
+<section>
+    <app-section-title title="Hola! 'Usuario'"></app-section-title>
+
+    <div class="container-md d-flex align-items-start">
+        <div class="nav flex-column nav-pills me-3">
+            <button type="button" class="nav-link active" id="nav-btn-profile" data-bs-toggle="pill" data-bs-target="#nav-tab-profile">Perfil</button>
+            <button type="button" class="nav-link" id="nav-btn-messages" data-bs-toggle="pill" data-bs-target="#nav-tab-notifications">
+                Notificaciones
+                <span class="badge bg-secondary">5</span>
+            </button>
+            <button type="button" class="nav-link" id="nav-btn-history" data-bs-toggle="pill" data-bs-target="#nav-tab-history">Historial de lectura</button>
+            <button type="button" class="nav-link" id="nav-btn-favorite" data-bs-toggle="pill" data-bs-target="#nav-tab-favorite">Lista de favoritos</button>
+            <button type="button" class="nav-link" id="nav-btn-conf-privacy" data-bs-toggle="pill" data-bs-target="#nav-tab-conf-privacy">Configuracion y Privacidad</button>
+        </div>
+
+        <div class="tab-content container-fluid" id="nav-tab-content">
+            <div class="tab-pane fade show active" id="nav-tab-profile">
+                <app-profile></app-profile>
+            </div>
+            <div class="tab-pane fade" id="nav-tab-notifications">
+                <app-notifications></app-notifications>
+            </div>
+            <div class="tab-pane fade" id="nav-tab-history">
+                <app-history></app-history>
+            </div>
+            <div class="tab-pane fade" id="nav-tab-favorite">
+                <app-favorites></app-favorites>
+            </div>
+            <div class="tab-pane fade" id="nav-tab-conf-privacy">
+                <app-configuration-privacy></app-configuration-privacy>
+            </div>
+        </div>
+    </div>  
+</section>

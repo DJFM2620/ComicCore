@@ -1,0 +1,15 @@
+<section>
+    <app-section-title title="Mi Cuenta"></app-section-title>
+
+    <div class="container-fluid d-flex justify-content-center">
+        <div class="btn-group mb-5" role="group">
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" routerLink="/Account/LogIn" routerLinkActive="active">
+            <label class="radio-button btn btn-outline-primary" for="btnradio1">Iniciar Sesion</label>
+    
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" routerLink="/Account/Register" routerLinkActive="active">
+            <label class="radio-button btn btn-outline-primary" for="btnradio2">Registrarse</label>
+        </div>
+    </div>
+    
+    <router-outlet></router-outlet>
+</section>

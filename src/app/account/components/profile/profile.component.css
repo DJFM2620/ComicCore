@@ -1,0 +1,8 @@
+label {
+
+    color: #FFFFFF;
+}
+
+input[data-bs-theme="light"] {
+    --bs-tertiary-bg: #6c757d !important; /* Color grisáceo similar al bg-secondary */
+  }

@@ -1,0 +1,21 @@
+a {
+    
+    text-decoration: none;
+}
+
+span {
+
+    display: inline-block;
+    background-color: #fff5b3;
+    padding: 5px;
+    margin: 10px 5px 10px 5px;
+    font-size: 1.2rem;
+    color: #000000;
+    font-weight: 700;
+    border-radius: 7px;
+}
+
+span::before {
+
+    content: "#";
+}
